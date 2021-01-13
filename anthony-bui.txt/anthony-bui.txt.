@@ -1,0 +1,195 @@
+
+https://codepen.io/TomNoook/pen/poEOMrN?editors=1100
+
+
+1.What is Semantic HTML? 
+	
+	The right way to use HTML to make the meaning of content on a web page, rather than merely define its appearance. 	
+
+2.What is HTML used for? 
+	
+	HTML is used to organize and format documents. It's a markup language.
+
+3. What is an attribute and where do we put it?
+
+	They help provide more information about HTML element like adding properties of the element such as width and height of an image. They are always specified in the start of the opening tag.
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+
+	The h1 tag is the most important header on the page and it should only be used once.
+
+5. Name two tags that have required attributes
+
+	omg and a tags. 
+
+6. What do we put in the head of our HTML document?
+
+	<title>, link to CSS, and other metadata. 
+ 
+7. What is an id?
+
+	id specifies a unique id for an element. 
+
+8. What elements can I add an id to? 
+	
+	all elements.
+
+9. How many times can I use the same id on a page?
+
+	one time
+ 
+10. What is a class? 
+
+	An attribute that specifies one or more class names for an HTML element.
+
+11. What elements can I add a class to? 
+
+	any element.
+
+12. How many times can I use the same class on a page? 
+
+	However many times you want to.
+
+13. How do I get my link to open in a new tab?
+
+	plug in the attribute to "_blank"
+
+14. What is the alt attribute in the image tag used for?
+
+	If an image cannot load for someone the alt attribute takes in effect and provides alternative information on the image to help load. 
+ 
+15. How do I reference an id?
+
+	#id selector allows you to target an element by referencing the id HTML attribute. 
+
+16. What is the difference between a section and a div
+
+	<Section> are to be used to convey a single common theme, and should appear as an entry in an outline of the page, where as <div> does not convey any meaning, aside from any found in its class, lang and title attributes. 
+
+17. What is CSS used for?
+
+	CSS is used to organize and format the contents of a webpage. CSS can be used to define size, color, font, line spacing, indentation, borders, and location of HTML elements.
+ 
+18. How to we select an element? Example - every h2 on the page
+
+	By assigning it a certain id or class.
+
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+	The difference between an id and class is that you may include multiple classes however an id is to be used only with one element. Id for #header classes for <p>
+
+20. How do we select classes in CSS?
+
+	To select classes in CSS you write (.) character followed by the name of the class.	
+
+21. How do we select a p element with a single class of “human””?
+	
+	.human
+
+22. What is a parent child selector? When would this be useful?
+
+	Selects all elements that are a direct child of the specified element. This would be useful to select all elements of the parent when you have a lot of code on the page. 
+		
+23. How do you select all links within a div with the class of sidebar?
+
+	.sidebar
+
+24. What is a pseudo selector?
+
+	A selector that chooses elements that are in a specific state. Example when you hover over with cursor.
+
+25. What do we use the change the spacing between lines?
+
+	"line-height: what ever number%;"
+
+26. What do we use to change the spacing between letters?
+
+	Use "letter-spacing:what ever number px;"
+
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+
+	p{ text-transform: uppercase; }
+	p{ text-transform: lowercase; }
+	p{ text-transform: capitalize; } 
+
+28. How do I add a 1px border around my div that is dotted and black?
+
+	<div style="border: dotted 1px black" id="mydiv">content</div>
+
+29. How do I select everything on the page? 
+
+	Use the * symbol 
+
+30. How do I write a comment in CSS?
+
+	/* your comment */
+
+31. How do I find out what file I am in, when I am using the command line?
+
+	pwd
+
+32. Using the command line - how do I see a list of files/folders in my current folder?
+
+	ls    
+
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    
+	rm, because your files will not be retrievable after doing so. 
+
+34. Why should I use version control? 
+
+	To increase effiecienty and to help devs move faster.
+
+35. How often should I commit to github?
+
+	Whenever a big step is finished 	
+
+36. What is the command we would use to push our repo up to github?
+
+	"git push"
+ 
+    37. Walk me through Lambda's git flow. 
+
+	Lambda Git Flow:
+1. Go to the project on GitHub
+2. Fork the project
+3. Copy the URL
+4.Open your terminal
+5.CD into the directory you are using
+6.git clone [enter URL you copied]
+7.CD into the project
+8.git checkout -b "file-name"
+9.git add
+10. Git commit -m " add commit message here"
+11. Git push -u origin "file name"
+12.pull request
+13.Go to your forked repo on GitHub. 
+14.Change branch from main to yours
+15. Click on pull request
+16.Change the base repository to your repo
+17.submit pull request 
+
+
+
+Stretch Questions
+
+1. What is the difference between an inline element and a block element?
+
+	inline elements does not force a new line to begin while block elements cause a line break.
+	
+2. What happens when an element is positioned absolutely?
+
+	will not show up on the normal document layout sitting by itself.	
+ 
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+	
+	flex box
+	
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+	block, div, h1, p.
+	inline, span, a.
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+
+	within your box model you have content, padding, border, and margin. Your content  is the area that can be sized using properties width/height. Padding is around the content. Next border wraps up the padding and content. Next is margin the last layer. 
